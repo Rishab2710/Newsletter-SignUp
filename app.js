@@ -28,7 +28,7 @@ app.post("/failure.html", function(req, res) {
 //Setting up MailChimp
 mailchimp.setConfig({
   //**********ENTER YOUR API KEY HERE***********
-  apiKey: "75edc906aa5b2c2f65ce9b53f3e5c382-us18",
+  apiKey: "apikey to enter",
   //**********ENTER YOUR API KEY PREFIX HERE i.e.THE SERVER***********
   server: "us18"
 });
@@ -39,7 +39,7 @@ app.post("/", function(req, res) {
   const secondName = req.body.lName;
   const email = req.body.Email;
   //**********ENTER YOU LIST ID HERE***********
-  const listId = "6132a0c574";
+  const listId = "listID";
   //Creating an object with the users data
   const subscribingUser = {
     firstName: firstName,
